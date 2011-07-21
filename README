@@ -1,0 +1,19 @@
+This script detects languages of strings in a database.
+Based on feedbackmine's ruby implementation of the n-gram method.
+	https://github.com/feedbackmine/language_detector
+	http://en.wikipedia.org/wiki/N-gram
+	install using the commands:
+		gem sources -a http://gems.github.com
+		gem install feedbackmine-language_detector
+Designed for big amounts of data.
+Supports saving results in a new instead of the source table.
+Uses activerecord (as used in Ruby on Rails) for general database handling
+	gem install activerecord
+Uses activerecord-import for inserting multiple values into the database efficiently
+	gem install activerecord-import
+Tested with ruby 1.8.7
+Just adjust the values in CONSTANTS and DATABASE CONNECTION and run the script
+
+I wrote it for a project at university in September 2009.
+Just wanted to share it in case anyone can use it.
+No further development planned so far.
